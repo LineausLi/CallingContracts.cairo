@@ -14,6 +14,7 @@ mod Callee {
         value: u128,
     }
 
+
     #[abi(embed_v0)]
     impl ICalleeImpl of super::ICallee<ContractState> {
         fn set_value(ref self: ContractState, value: u128) -> u128 {
