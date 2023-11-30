@@ -4,6 +4,7 @@
 #[starknet::interface]
 trait ICallee<TContractState> {
     fn set_value(ref self: TContractState, value: u128) -> u128;
+
 }
 
 #[starknet::contract]
