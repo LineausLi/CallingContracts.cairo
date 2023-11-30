@@ -49,6 +49,7 @@ mod Caller {
     struct Storage {}
 
 
+
     #[abi(embed_v0)]
     impl ICallerImpl of super::ICaller<ContractState> {
         fn set_value_from_address(ref self: ContractState, addr: ContractAddress, value: u128) {
